@@ -15,8 +15,7 @@ import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
 import { PAGES_ROUTES } from './pages.routes';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
-
-
+import { GraficoDonaComponent } from '../components/grafica/grafico-dona.component';
 
 
 @NgModule({
@@ -26,6 +25,7 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
         ProgressComponent,
         Graficas1Component,
         IncrementadorComponent,
+        GraficoDonaComponent
 
     ],
     exports:[

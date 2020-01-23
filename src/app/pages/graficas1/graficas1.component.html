@@ -3,17 +3,10 @@
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-                <div>
-                    <div>
-                      <div style="display: block">
-                        <canvas baseChart
-                          [data]="doughnutChartData"
-                          [labels]="doughnutChartLabels"
-                          [chartType]="doughnutChartType">
-                        </canvas>
-                      </div>
-                    </div>
-                  </div>
+              <app-grafico-dona 
+              [leyenda]="this.graficos.grafico1.leyenda"
+              [label]="this.graficos.grafico1.labels"
+              [data]="this.graficos.grafico1.data"></app-grafico-dona>
             </div>
         </div>
     </div>
@@ -21,19 +14,37 @@
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-                <div>
-                    <div>
-                      <div style="display: block">
-                        <canvas baseChart
-                          [data]="doughnutChartData"
-                          [labels]="doughnutChartLabels"
-                          [chartType]="doughnutChartType">
-                        </canvas>
-                      </div>
-                    </div>
-                  </div>
+              <app-grafico-dona 
+              [leyenda]="this.graficos.grafico2.leyenda"
+              [label]="this.graficos.grafico2.labels"
+              [data]="this.graficos.grafico2.data"></app-grafico-dona>
             </div>
         </div>
     </div>
+
+</div>
+<div class="row">
+    
+  <div class="col-6">
+      <div class="card">
+          <div class="card-body">
+            <app-grafico-dona
+            [leyenda]="this.graficos.grafico3.leyenda"
+            [label]="this.graficos.grafico3.labels"
+            [data]="this.graficos.grafico3.data"></app-grafico-dona>
+          </div>
+      </div>
+  </div>
+
+  <div class="col-6">
+      <div class="card">
+          <div class="card-body">
+            <app-grafico-dona
+            [leyenda]="this.graficos.grafico4.leyenda"
+            [label]="this.graficos.grafico4.labels"
+            [data]="this.graficos.grafico4.data"></app-grafico-dona>
+          </div>
+      </div>
+  </div>
 
 </div>
